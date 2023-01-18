@@ -97,6 +97,7 @@ header {
 
 .burger-icon {
   stroke: #2E2F42;
+  background-color: white;
 }
 
 .burger {
