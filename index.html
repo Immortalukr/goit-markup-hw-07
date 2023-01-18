@@ -9,56 +9,50 @@
   </head>
   <body>
     <header class="header">
-      <div class="container flex-container">
-        <a href="index.html" class="logo"
-          ><span class="logo-dark">web</span>studio</a
-        >
-        <button class="burger-btn" type="button" data-menu-open>
-          <svg class="burger-icon" width="32" height="22">
-            <use href="./images/icon/symbol-defs.svg#icon-menu"></use>
-          </svg>
-        </button>
-        <div class="burger" data-menu>
-          <button class="nav-btn" type="button" data-menu-close>
-            <svg width="24" height="24">
-              <use href="./images/icon/symbol-defs.svg#icon-close-btn"></use>
+      <div class="container">
+        <nav class="nav">
+          <a href="" class="logo"><span class="logo-dark">web</span>studio</a>
+          <button
+            class="burger-menu"
+            type="button"
+            aria-controls="container-menu"
+            aria-expanded="false"
+            data-menu-btton
+          >
+            <svg width="32px" height="22px">
+              <use
+                class="menu-open"
+                style="stroke: #2e2f42"
+                href="./images/icon/symbol-defs.svg#icon-menu"
+                aria-label="button open menu"
+              ></use>
+              <use
+                class="menu-close"
+                href="./images/icon/symbol-defs.svg#icon-close"
+              ></use>
             </svg>
           </button>
-          <nav class="nav">
-            <ul class="nav_items">
-              <li class="nav_list">
-                <a href="index.html" class="link curent">studia</a>
-              </li>
-              <li class="nav_list">
-                <a href="./portfolio.html" class="link">portfolio</a>
-              </li>
-              <li class="nav_list"><a href="" class="link">contacts</a></li>
+          <div class="container-menu" id="container-menu" data-menu>
+            <ul class="items">
+              <li class="list"><a href="" class="link">studio</a></li>
+              <li class="list"><a href="" class="link">portfolio</a></li>
+              <li class="list"><a href="" class="link">contacts</a></li>
             </ul>
-          </nav>
-          <ul class="contacts">
-            <li class="contacts_list">
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts_list">
-              <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </div>
+            <ul>
+              <li class="list">
+                <a href="mailto:info@devstudio.com" class="contacts"
+                  >info@devstudio.com</a
+                >
+                <a href="tel:+11-000-111-11-11 " class="contacts">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
-    <main>
-      <section>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-          impedit, numquam aperiam mollitia alias deleniti illum expedita
-          quaerat ipsum! Est earum facilis laboriosam sit, id ab dolor assumenda
-          illo fugiat ullam sequi nihil temporibus, fugit ipsam vitae molestiae
-          magni nobis?
-        </p>
-      </section>
-    </main>
+    <main></main>
     <footer></footer>
     <script src="./js/mobile-menu.js"></script>
   </body>
