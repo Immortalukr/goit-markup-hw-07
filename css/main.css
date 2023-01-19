@@ -62,6 +62,11 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
 .container {
   max-width: 480px;
   padding: 0 15px;
@@ -113,6 +118,12 @@ a {
   background-color: transparent;
   margin: 0;
   padding: 0;
+  z-index: 10;
+}
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
 }
 
 .burger-menu.is-open .menu-open {
@@ -130,7 +141,7 @@ a {
 .container-menu {
   position: absolute;
   width: 100%;
-  top: 100%;
+  top: 0;
   left: 0;
   display: none;
   background: #FFFFFF;
@@ -138,4 +149,63 @@ a {
 }
 .container-menu.is-open {
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .container-menu {
+    position: relative;
+    box-shadow: none;
+  }
+}
+
+.items-nav {
+  margin-top: 80px;
+  margin-left: 40px;
+}
+
+.list-nav {
+  margin-bottom: 40px;
+}
+
+.list-nav:last-child {
+  margin-bottom: 284px;
+}
+
+.link-nav {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1111111111;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+  text-transform: capitalize;
+}
+.link-nav:hover, .link-nav:focus {
+  color: #404BBF;
+}
+
+.items-contact {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-left: 40px;
+}
+
+.list-contact:first-child {
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+
+.list-contact:last-child .link-contact {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.1111111111;
+}
+
+.link-contact {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.link-contact:hover, .link-contact:focus {
+  color: #404BBF;
 }/*# sourceMappingURL=main.css.map */

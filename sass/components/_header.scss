@@ -11,7 +11,8 @@
   align-items: center;
 }
 .logo{
- @include fn-logo;
+ @include fn-logo-head-text;
+ font-family: 'Raleway', sans-serif;
  text-transform: uppercase;
  padding-top: 24px;
  padding-bottom: 24px;
@@ -27,6 +28,12 @@
   background-color: transparent;
   margin: 0;
   padding: 0;
+  z-index: 10;
+  
+  @media screen and (min-width:768px) {
+    display: none;
+    
+  }
 }
 .burger-menu.is-open .menu-open{
   display: none;
@@ -41,12 +48,18 @@
 .container-menu{
   position: absolute;
   width: 100%;
-  top: 100%;
+  top: 0;
   left: 0;
   display: none;
   background: #FFFFFF;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   &.is-open{
     display: block;
+    
+  }
+  @media screen and (min-width:768px) {
+    position: relative;
+    box-shadow: none;
+    
   }
 }

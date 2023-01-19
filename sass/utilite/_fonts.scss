@@ -1,11 +1,12 @@
-
+$cl-log:#2E2F42;
     
-    @mixin fn-logo ($f-w: 800, $f-s: 18px, $l-h:21px, $l-s:0.03em,$loco-col:#2E2F42) {
+    @mixin fn-logo-head-text ($f-w: 800, $f-s: 18px, $l-h:21px, $l-s:0.03em,$loco-col:$cl-log) {
         font-weight: $f-w;
         font-size: $f-s;
         line-height: calc($l-h/$f-s);
         letter-spacing: $l-s;
         color:$loco-col;
-        font-family: 'Raleway',sans-serif;
       }
+
+
 

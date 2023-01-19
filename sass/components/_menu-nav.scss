@@ -1,0 +1,40 @@
+.items-nav{
+  margin-top:80px ;
+  margin-left: 40px;
+}
+.list-nav{
+ margin-bottom: 40px;
+}
+.list-nav:last-child{
+  margin-bottom: 284px;
+}
+.link-nav{
+  @include fn-logo-head-text ($f-w: 700, $f-s: 36px, $l-h: 40px, $l-s: 0.02em, $loco-col: $cl-log);
+  text-transform: capitalize;
+  &:hover,&:focus{
+    color: #404BBF;
+  }
+}
+//contacts
+.items-contact{
+  display: flex;
+  flex-flow: column-reverse;
+  margin-left: 40px;
+}
+.list-contact:first-child{
+  
+      margin-top: 40px;
+      margin-bottom: 48px;
+}
+.list-contact:last-child .link-contact{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(40px/36px);
+}
+.link-contact{
+@include fn-logo-head-text ($f-w: 500, $f-s: 20px, $l-h: 24px, $l-s: 0.02em, $loco-col:#434455);
+&:hover,&:focus{
+  color:#404BBF ;
+}
+
+}
