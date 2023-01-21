@@ -1,6 +1,10 @@
 .items-nav{
   margin-top:80px ;
   margin-left: 40px;
+  @media screen and (min-width:768px) {
+    display: flex;
+    margin: 0;
+  }
 }
 .list-nav{
  margin-bottom: 40px;
@@ -9,8 +13,12 @@
   margin-bottom: 284px;
 }
 .link-nav{
-  @include fn-logo-head-text ($f-w: 700, $f-s: 36px, $l-h: 40px, $l-s: 0.02em, $loco-col: $cl-log);
+  @include fn-logo-head-text ($f-w: 700, $f-s: 36px, $l-h: 40px, $l-s: 0.02em,);
   text-transform: capitalize;
+  color:#2E2F42 ;
+  @media screen and (min-width:768px) {
+    @include fn-logo-head-text ($f-w: 500, $f-s: 16px, $l-h: 24px, $l-s: 0.02em);
+  }
   &:hover,&:focus{
     color: #404BBF;
   }
@@ -20,19 +28,39 @@
   display: flex;
   flex-flow: column-reverse;
   margin-left: 40px;
+  @media screen and (min-width:768px) {
+    flex-flow: column;
+  }
 }
-.list-contact:first-child{
+.list-contact{
   
       margin-top: 40px;
       margin-bottom: 48px;
-}
+      @media screen and (min-width:768px){
+        margin: 0;
+      }
+        
+      }
+
 .list-contact:last-child .link-contact{
     font-weight: 600;
     font-size: 36px;
     line-height: calc(40px/36px);
+    @media screen and (min-width:768px) {
+        @include fn-logo-head-text ($f-w: 400, $f-s: 12px, $l-h: 16px, $l-s: 0.04em);
+    
+      }
+}
+.list-contact{
+ 
 }
 .link-contact{
-@include fn-logo-head-text ($f-w: 500, $f-s: 20px, $l-h: 24px, $l-s: 0.02em, $loco-col:#434455);
+@include fn-logo-head-text ($f-w: 500, $f-s: 20px, $l-h: 24px, $l-s: 0.02em);
+color: #434455;
+@media screen and (min-width:768px) {
+    @include fn-logo-head-text ($f-w: 400, $f-s: 12px, $l-h: 16px, $l-s: 0.04em);
+
+  }
 &:hover,&:focus{
   color:#404BBF ;
 }

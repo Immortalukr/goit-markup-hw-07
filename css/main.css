@@ -101,7 +101,6 @@ body {
   font-size: 18px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
-  color: #2E2F42;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   padding-top: 24px;
@@ -154,12 +153,19 @@ body {
   .container-menu {
     position: relative;
     box-shadow: none;
+    display: flex;
   }
 }
 
 .items-nav {
   margin-top: 80px;
   margin-left: 40px;
+}
+@media screen and (min-width: 768px) {
+  .items-nav {
+    display: flex;
+    margin: 0;
+  }
 }
 
 .list-nav {
@@ -175,8 +181,16 @@ body {
   font-size: 36px;
   line-height: 1.1111111111;
   letter-spacing: 0.02em;
-  color: #2E2F42;
   text-transform: capitalize;
+  color: #2E2F42;
+}
+@media screen and (min-width: 768px) {
+  .link-nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 }
 .link-nav:hover, .link-nav:focus {
   color: #404BBF;
@@ -187,16 +201,34 @@ body {
   flex-flow: column-reverse;
   margin-left: 40px;
 }
+@media screen and (min-width: 768px) {
+  .items-contact {
+    flex-flow: column;
+  }
+}
 
-.list-contact:first-child {
+.list-contact {
   margin-top: 40px;
   margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .list-contact {
+    margin: 0;
+  }
 }
 
 .list-contact:last-child .link-contact {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.1111111111;
+}
+@media screen and (min-width: 768px) {
+  .list-contact:last-child .link-contact {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3333333333;
+    letter-spacing: 0.04em;
+  }
 }
 
 .link-contact {
@@ -205,6 +237,14 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
+}
+@media screen and (min-width: 768px) {
+  .link-contact {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3333333333;
+    letter-spacing: 0.04em;
+  }
 }
 .link-contact:hover, .link-contact:focus {
   color: #404BBF;
