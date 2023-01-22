@@ -1,0 +1,45 @@
+.about{
+  display: flex;
+  flex-flow: column;
+  row-gap: 72px;
+  justify-content: center;
+  @include tablet{
+    flex-flow: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+  @include desktop{
+    gap: 0;
+    margin: -12px;
+  }
+}
+.about-list{
+  flex-basis: calc(100% / 2 - 24px);
+  @include desktop{
+    @include flex-grow($nmargin: 4, $mrx: 24px, $nelements: 4);
+  }
+}
+.aboud-head{
+  @include fn-logo-head-text ($f-w: 700, $f-s: 36px, $l-h: 40px, $l-s: 0.02em);
+    text-transform: capitalize;
+    color: #2E2F42;
+    margin-bottom: 8px;
+    text-align: center;
+@include tablet {
+  text-align: start;
+}
+@include desktop {
+  &::before{
+    
+  }
+  @include fn-logo-head-text ($f-w: 500, $f-s: 20px, $l-h: 24px, $l-s: 0.02em);
+}
+}
+.about-text{
+@include fn-logo-head-text ($f-w: 500, $f-s: 16px, $l-h: 24px, $l-s: 0.02em);
+  color: #434455;
+  max-width: 396px;
+  @include desktop {
+      @include fn-logo-head-text ($f-w: 400, $f-s: 16px, $l-h: 24px, $l-s: 0.02em);
+    }
+  }

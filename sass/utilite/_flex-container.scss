@@ -1,0 +1,5 @@
+@mixin flex-grow($nmargin:4 , $mrx:12px, $nelements:2 ){
+  flex-basis: calc((100% - $nmargin * $mrx ) / $nelements );
+  margin:calc($mrx / 2)  ;
+}
+// calc (100% - кількість маржинів * на їх значення ) /  на кількість елементів)
