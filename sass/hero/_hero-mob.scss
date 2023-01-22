@@ -39,7 +39,7 @@
     }
   }
 .hero-title{
-  color: #fff;
+  color: var(--color-for-body);
   text-transform: capitalize;
   @include fn-logo-head-text ($f-w: 700, $f-s: 36px, $l-h: 40px, $l-s: 0.02em);
   max-width: 320px;

@@ -366,7 +366,7 @@ body {
   }
 }
 .hero-title {
-  color: #fff;
+  color: var(--color-for-body);
   text-transform: capitalize;
   font-weight: 700;
   font-size: 36px;
