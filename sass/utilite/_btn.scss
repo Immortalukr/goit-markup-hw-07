@@ -1,0 +1,9 @@
+@mixin all-btn($f-w:500,$f-s:16px,$l-h:24px,$l-s:0.04em,$cl-text-btn:#FFFFFF){
+  
+  
+    font-weight:$f-w;
+    font-size: $f-s;
+    line-height: calc($l-h/$f-s);
+    letter-spacing: $l-s;
+    color: $cl-text-btn;
+}
