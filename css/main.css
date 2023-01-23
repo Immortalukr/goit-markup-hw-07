@@ -65,7 +65,15 @@ a {
 .section {
   position: relative;
   max-width: 1440px;
-  margin: 92px auto;
+  margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 body {
@@ -323,12 +331,20 @@ body {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.3333333333;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     color: #434455;
     transition: var(--animetion-transition);
   }
   .link-contact--desc:hover, .link-contact--desc:focus {
     color: #404bbf;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .link-contact--desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 }
 .section-hero {
@@ -455,10 +471,6 @@ body {
 @media screen and (min-width: 768px) {
   .aboud-head {
     text-align: start;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .aboud-head {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;

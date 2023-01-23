@@ -41,11 +41,18 @@
     }
   }
   .link-contact--desc{
-      @include fn-logo-head-text ($f-w: 400, $f-s: 12px, $l-h: 16px, $l-s: 0.04em);
+      @include fn-logo-head-text ($f-w: 400, $f-s: 12px, $l-h: 16px, $l-s: 0.02em);
       color:#434455;
       transition: var(--animetion-transition);
       &:hover,&:focus{
         color: #404bbf;
       }
     }
+}
+@include desktop{
+.link-contact--desc{
+  @include desktop {
+      @include fn-logo-head-text ($f-w: 400, $f-s: 16px, $l-h: 24px, $l-s: 0.02em);
+    }
+}
 }

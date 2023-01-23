@@ -1,5 +1,11 @@
 .section{
     position: relative;
     max-width: 1440px;
-    margin: 92px auto;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    @include desktop {
+        padding-top: 120px;
+        padding-bottom: 120px;   
+    }
 }

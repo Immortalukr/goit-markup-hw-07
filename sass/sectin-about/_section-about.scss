@@ -27,11 +27,7 @@
     text-align: center;
 @include tablet {
   text-align: start;
-}
-@include desktop {
-  &::before{
-    
-  }
+  
   @include fn-logo-head-text ($f-w: 500, $f-s: 20px, $l-h: 24px, $l-s: 0.02em);
 }
 }
