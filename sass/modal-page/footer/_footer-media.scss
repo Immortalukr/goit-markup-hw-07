@@ -1,0 +1,34 @@
+.footer-media{
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+.footer-media>.media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-for-body);
+  margin-bottom: 16px;
+
+}
+.footer-list {
+  display: flex;
+  justify-content: center ;
+  margin-top: 8px;
+  gap: 16px;}
+.footer-link {
+  display: block;
+  padding: 0;
+  border: none;
+  width: 40px;
+  height: 40px;
+  fill: var(--color-for-footer-head);
+  border-radius: 50%;
+  background-color: var(--color-for-footer-icon-bc);
+  transition: background-color var(--animetion-transition);
+}
+.footer-icon {
+  margin: 8px;
+  width: 24px;
+  height: 24px;
+}

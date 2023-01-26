@@ -1,0 +1,27 @@
+.logo-footer {
+  color: var(--color-for-footer-head);
+  font-family: var(--logo-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logo-footer--white{
+  color: var(--color-for-logo);
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--color-for-btn-text-hover);
+}
+
+.text-footer {
+  margin: 0 auto;
+  max-width: 264px;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-for-footer-text);
+}
