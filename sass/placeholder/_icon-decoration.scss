@@ -1,5 +1,28 @@
-%icon-antenna {
+/* icon for link section my team */
+.group-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  gap: 24px;
+}
+
+.icon-main {
   display: block;
-  content: "";
-  background-image: url(../images/icon/antenna.svg);
+  border: none;
+  height: 40px;
+  fill: var(--color-for-footer-head);
+  border-radius: 50%;
+  background-color: var(--color-for-logo);
+  transition: background-color var(--animetion-transition);
+}
+
+.icon-link {
+  margin: 12px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-main:hover,
+.icon-main:focus {
+  background-color: var(--color-for-btn-hov-foc-hero);
 }

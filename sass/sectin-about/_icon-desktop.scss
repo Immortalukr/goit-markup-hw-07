@@ -1,0 +1,32 @@
+@include desktop {
+.about-list::before {
+  margin-bottom: 8px;
+  background-color: var(--color-for-footer-head);
+  height: 112px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  display: block;
+  content: "";
+  background-image: url(../images/icon/antenna.svg);
+}
+
+.icon-clock::before {
+  display: block;
+  content: "";
+  background-image: url(../images/icon/clock.svg);
+}
+
+.icon-diagram::before {
+  display: block;
+  content: "";
+  background-image: url(../images/icon/diagram.svg);
+}
+
+.icon-astronaut::before {
+  display: block;
+  content: "";
+  background-image: url(../images/icon/astronaut.svg);
+}}

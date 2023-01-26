@@ -33,7 +33,7 @@
   margin-bottom: 40px;
 }
 @include mobile-only{
-.list-contact:last-child .link-contact{
+.list-contact:last-child{
     font-weight: 600;
     font-size: 36px;
     line-height: calc(40px/36px); }
