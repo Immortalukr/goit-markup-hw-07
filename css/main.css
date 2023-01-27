@@ -1107,4 +1107,132 @@ body {
 .btn-sub:hover,
 .btn-sub:focus {
   background-color: var(--color-for-btn-hov-foc-hero);
+}
+
+.not-visibilyti {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* menu btn */
+.nav-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn + .btn {
+  margin-left: var(--card-between-gab);
+}
+
+.btn-menu {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-for-btn-text-hero);
+  background-color: var(--color-for-footer-head);
+  text-transform: capitalize;
+  padding: 12px 24px;
+  transition: color var(--animetion-transition), background-color var(--animetion-transition), box-shadow var(--animetion-transition);
+}
+
+.btn-menu:hover,
+.btn-menu:focus {
+  color: var(--color-for-btn-secondary);
+  background-color: var(--color-for-btn-text-hover);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* main info page */
+.header-portfolio {
+  margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-between-gab));
+  margin-bottom: calc(-1 * var(--card-between-gab-bottom));
+}
+
+.portfolio {
+  width: calc(33.3333333333% - var(--card-between-gab));
+  margin-left: var(--card-between-gab);
+  margin-bottom: var(--card-between-gab-bottom);
+  text-transform: capitalize;
+}
+
+.card-text {
+  border: 1px solid #e7e9fc;
+  border-top: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.card-text > h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--color-for-bc);
+  margin-bottom: 8px;
+}
+
+.link-card {
+  display: block;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transition: box-shadow var(--animetion-transition);
+}
+
+.card-text > p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-for-tex-contact);
+}
+
+/* картка опис з overflow */
+.link-description {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.card-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(0%, 100%);
+  padding: 40px 32px 0 32px;
+  background-color: var(--color-for-btn-text-hover);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-for-btn-secondary);
+  transition: transform var(--animetion-transition);
+}
+
+/*  */
+.link-card:hover .card-description,
+.link-card:focus .card-description {
+  transform: translate(0%, 0%);
+}
+
+.link-card:hover,
+.link-card:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.footer-marging {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }/*# sourceMappingURL=main.css.map */
