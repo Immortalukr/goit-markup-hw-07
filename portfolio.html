@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="" class="logo"><span class="logo-main">web</span>studio</a>
+
+          <ul class="items-nav--desc">
+            <li class="list-nav--desc">
+              <a href="index.html" class="link-nav--desc">studio</a>
+            </li>
+            <li class="list-nav--desc">
+              <a href="portfolio.html" class="link-nav--desc curent"
+                >portfolio</a
+              >
+            </li>
+            <li class="list-nav--desc">
+              <a href="" class="link-nav--desc">contacts</a>
+            </li>
+          </ul>
+          <ul class="items-contact--desc">
+            <li class="list-contact--desc">
+              <a href="mailto:info@devstudio.com" class="link-contact--desc"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="list-contact-desc">
+              <a href="tel:+11-000-111-11-11 " class="link-contact--desc">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+
+          <button
+            class="burger-menu"
+            type="button"
+            aria-controls="container-menu"
+            aria-expanded="false"
+            data-menu-btton
+          >
+            <svg width="32px" height="22px">
+              <use
+                class="menu-open"
+                style="stroke: #2e2f42"
+                href="./images/icon/symbol-defs.svg#icon-menu"
+                aria-label="button open menu"
+              ></use>
+              <use
+                class="menu-close"
+                href="./images/icon/symbol-defs.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+        </nav>
+        <div class="container-menu" id="container-menu" data-menu>
+          <ul class="items-nav">
+            <li class="list-nav">
+              <a href="index.html" class="link-nav">studio</a>
+            </li>
+            <li class="list-nav">
+              <a href="portfolio.html" class="link-nav">portfolio</a>
+            </li>
+            <li class="list-nav">
+              <a href="" class="link-nav">contacts</a>
+            </li>
+          </ul>
+          <ul class="items-contact">
+            <li class="list-contact">
+              <a href="mailto:info@devstudio.com" class="link-contact"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="list-contact">
+              <a href="tel:+11-000-111-11-11 " class="link-contact">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+          <ul class="media-contact">
+            <li class="media-list">
+              <a href="" class="media-link">
+                <svg class="media-mob-icon" width="24px" height="24px">
+                  <use
+                    href="./images/icon/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-list">
+              <a href="" class="media-link">
+                <svg class="media-mob-icon" width="24px" height="24px">
+                  <use href="./images/icon/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-list">
+              <a href="" class="media-link">
+                <svg class="media-mob-icon" width="24px" height="24px">
+                  <use href="./images/icon/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-list">
+              <a href="" class="media-link">
+                <svg class="media-mob-icon" width="24px" height="24px">
+                  <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer">
+      <div class="container flex-footer">
+        <div>
+          <a href="index.html" class="logo-footer"
+            ><span class="logo-footer--white">web</span>studio</a
+          >
+          <p class="text-footer">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+        <div class="footer-media">
+          <p class="media">Social media</p>
+          <ul class="footer-list">
+            <li>
+              <a class="footer-link" href="">
+                <svg class="footer-icon">
+                  <use
+                    href="./images/icon/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="">
+                <svg class="footer-icon">
+                  <use href="./images/icon/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="">
+                <svg class="footer-icon">
+                  <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="">
+                <svg class="footer-icon">
+                  <use href="./images/icon/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="footer-form">
+          <label class="footer-form_text" for="footer-email">Subscribe</label>
+          <div class="footer-email">
+            <input
+              class="footer-date"
+              type="email"
+              name="footer-email"
+              id="footer-email"
+              placeholder="E-mail"
+            />
+            <button class="btn-subscribe" type="submit">
+              Subscribe
+              <svg class="btn-subscribe_icon" width="24" height="24">
+                <use href="./images/icon/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
