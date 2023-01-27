@@ -1,7 +1,19 @@
-.footer-media{
+@include mobile-only{
+  .footer-media{
   margin-top: 72px;
   margin-bottom: 72px;
+}}
+@include tablet-only{
+  .footer-media{
+    margin-left: 24px;
+  }
 }
+@include desktop{
+.footer-media{
+  margin-left: 120px;
+  margin-right: 80px;
+}}
+
 .footer-media>.media {
   font-weight: 500;
   font-size: 16px;
@@ -26,6 +38,9 @@
   border-radius: 50%;
   background-color: var(--color-for-footer-icon-bc);
   transition: background-color var(--animetion-transition);
+  &:hover , &:focus{
+    background-color: var(--color-for-footer-icon-hover);
+  }
 }
 .footer-icon {
   margin: 8px;

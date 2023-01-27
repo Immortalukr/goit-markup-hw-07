@@ -4,10 +4,21 @@ margin: 0 auto;
 background-color: var(--color-for-bc);
 padding-top: 100px;
 padding-bottom: 100px;}
-.flex-footer{
+.container.flex-footer{
   display: flex;
   flex-flow: column;
   text-align: center;
+  @include tablet-only{
+    text-align: start;
+    flex-flow: wrap;
+    
+    row-gap: 72px;
+    align-items: baseline;
+  }
+  @include desktop{
+    flex-flow: row;
+    text-align: start
+  }
 }
 @import "./logo";
 @import "./footer-media";
