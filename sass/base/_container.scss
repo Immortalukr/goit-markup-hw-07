@@ -4,18 +4,18 @@ body{
   background-color: #fff;
 }
 .container {
-  max-width: 480px;
+  min-width: 320px;
+
   padding: 0 15px;
   margin: 0 auto;
 }
-@media screen and (min-width:'768px') {
+@include tablet {
   .container {
-    max-width: 768px;
-
+    width: 768px;
   }
 }
-@media screen and (min-width:'1200px') {
-  .container {
-    max-width: 1158px;
+@include desktop{
+  .container{
+    width: 1158px;
   }
 }

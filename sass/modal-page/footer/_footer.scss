@@ -1,6 +1,4 @@
 .footer{
-max-width: 1440px;
-margin: 0 auto;
 background-color: var(--color-for-bc);
 padding-top: 100px;
 padding-bottom: 100px;}
@@ -11,7 +9,7 @@ padding-bottom: 100px;}
   @include tablet-only{
     text-align: start;
     flex-flow: wrap;
-    
+    width: 532px;
     row-gap: 72px;
     align-items: baseline;
   }

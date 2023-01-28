@@ -27,6 +27,8 @@
 @include desktop{
   .section-hero {
       height: 600px;
+      padding-top: 188px;
+      padding-bottom: 188px;
       background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images-format/hero-bg-desk.jpg);
   
       @include retina-bg {

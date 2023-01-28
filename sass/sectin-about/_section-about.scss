@@ -24,11 +24,12 @@
     text-transform: capitalize;
     color: #2E2F42;
     margin-bottom: 8px;
-    text-align: center;
+    @include mobile-only {
+    text-align: center;}
 @include tablet {
   text-align: start;
   
-  @include fn-logo-head-text ($f-w: 500, $f-s: 20px, $l-h: 24px, $l-s: 0.02em);
+  @include fn-logo-head-text ($f-w: 700, $f-s: 36px, $l-h: 40px, $l-s: 0.02em);
 }
 }
 .about-text{

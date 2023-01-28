@@ -7,8 +7,6 @@
 @import "./base/container" ;
 @import "./utilite/fonts";
 @import "./components-header/header";
-@import "./components-header/menu-mob";
-@import "./components-header/menu-desc-tablet";
 @import "./utilite/btn";
 @import "./utilite/media@retina-bg";
 @import "./hero/hero-mob";
@@ -20,4 +18,6 @@
 @import "./customer/customer";
 @import "./modal-page/footer/footer";
 @import "./modal-page/modal-page";
-@import './main-portfolio/main-portfolio'
+@import "./components-header/mob-menu";
+@import "./portfolio";
+

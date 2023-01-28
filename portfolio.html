@@ -18,118 +18,51 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <a href="" class="logo"><span class="logo-main">web</span>studio</a>
-
-          <ul class="items-nav--desc">
-            <li class="list-nav--desc">
-              <a href="index.html" class="link-nav--desc">studio</a>
-            </li>
-            <li class="list-nav--desc">
-              <a href="portfolio.html" class="link-nav--desc curent"
-                >portfolio</a
-              >
-            </li>
-            <li class="list-nav--desc">
-              <a href="" class="link-nav--desc">contacts</a>
-            </li>
-          </ul>
-          <ul class="items-contact--desc">
-            <li class="list-contact--desc">
-              <a href="mailto:info@devstudio.com" class="link-contact--desc"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="list-contact-desc">
-              <a href="tel:+11-000-111-11-11 " class="link-contact--desc">
-                +11 (000) 111-11-11
-              </a>
-            </li>
-          </ul>
-
-          <button
-            class="burger-menu"
-            type="button"
-            aria-controls="container-menu"
-            aria-expanded="false"
-            data-menu-btton
+        <a href="index.html" class="logo"
+          ><span class="logo--main">web</span>studio</a
+        >
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg width="32px" height="22px">
-              <use
-                class="menu-open"
-                style="stroke: #2e2f42"
-                href="./images/icon/symbol-defs.svg#icon-menu"
-                aria-label="button open menu"
-              ></use>
-              <use
-                class="menu-close"
-                href="./images/icon/symbol-defs.svg#icon-close"
-              ></use>
-            </svg>
-          </button>
-        </nav>
-        <div class="container-menu" id="container-menu" data-menu>
-          <ul class="items-nav">
-            <li class="list-nav">
-              <a href="index.html" class="link-nav">studio</a>
-            </li>
-            <li class="list-nav">
-              <a href="portfolio.html" class="link-nav">portfolio</a>
-            </li>
-            <li class="list-nav">
-              <a href="" class="link-nav">contacts</a>
-            </li>
-          </ul>
-          <ul class="items-contact">
-            <li class="list-contact">
-              <a href="mailto:info@devstudio.com" class="link-contact"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="list-contact">
-              <a href="tel:+11-000-111-11-11 " class="link-contact">
-                +11 (000) 111-11-11
-              </a>
-            </li>
-          </ul>
-          <ul class="media-contact">
-            <li class="media-list">
-              <a href="" class="media-link">
-                <svg class="media-mob-icon" width="24px" height="24px">
-                  <use
-                    href="./images/icon/symbol-defs.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media-list">
-              <a href="" class="media-link">
-                <svg class="media-mob-icon" width="24px" height="24px">
-                  <use href="./images/icon/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media-list">
-              <a href="" class="media-link">
-                <svg class="media-mob-icon" width="24px" height="24px">
-                  <use href="./images/icon/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media-list">
-              <a href="" class="media-link">
-                <svg class="media-mob-icon" width="24px" height="24px">
-                  <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <ul class="menu">
+          <li class="menu_list">
+            <a href="index.html" class="link">Studio</a>
+          </li>
+          <li class="menu_list">
+            <a href="portfolio.html" class="link curent">portfolio</a>
+          </li>
+          <li><a href="" class="link">Contacts</a></li>
+        </ul>
+        <ul class="contacts">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+11-000-111-11-11" class="link">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
       </div>
     </header>
-
     <main>
-      <section class="footer-marging">
+      <section class="section-portfolio">
         <div class="container">
           <h1 class="not-visibilyti">скритий заголовок</h1>
           <ul class="nav-btn">
@@ -154,9 +87,14 @@
               <a href="" class="link-card">
                 <img
                   src="./images/main-portfolio/banking-app.jpg"
-                  alt="banking-app-interface-concept"
+                  srcset="
+                    ./images/main-portfolio/banking-app.jpg    1x,
+                    ./images/main-portfolio/banking-app@2x.jpg 2x
+                  "
                   width="360"
+                  alt="banking-app-interface-concept"
                 />
+
                 <div class="card-text">
                   <h3>Banking App Interface Concept</h3>
                   <p>app</p>
@@ -169,8 +107,12 @@
                 <div class="link-description">
                   <img
                     src="./images/main-portfolio/cashless-payment.jpg"
-                    alt="cashless-payment"
+                    srcset="
+                      ./images/main-portfolio/cashless-payment.jpg   1x,
+                      ./images/main-portfolio/cashless-paymen@2x.jpg 2x
+                    "
                     width="360"
+                    alt="cashless-payment"
                   />
                   <p class="card-description">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -349,6 +291,79 @@
         </form>
       </div>
     </footer>
-    <script src="./js/mobile-menu.js"></script>
+    <!-- menu-burger -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div class="mob-container">
+        <ul class="mobile-menu">
+          <li><a href="index.html" class="link">Studio</a></li>
+          <li><a href="portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+        </ul>
+
+        <ul class="mobile-contacts">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+11-000-111-11-11" class="link">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+        <ul class="mobile-icons">
+          <li>
+            <a class="icon-main" href="">
+              <svg class="icon-link">
+                <use href="./images/icon/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon-main" href="">
+              <svg class="icon-link">
+                <use href="./images/icon/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon-main" href="">
+              <svg class="icon-link">
+                <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon-main" href="">
+              <svg class="icon-link">
+                <use href="./images/icon/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
